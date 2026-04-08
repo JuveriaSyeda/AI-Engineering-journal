@@ -1,5 +1,5 @@
 #import math
-
+import random
 print("Hello World")
 print("*" * 10)
 
@@ -173,4 +173,16 @@ print("*" * 10)
 #    return(total)
     
 #print(multiply(2,3,4,5,6))
+
+#reverse string in python
+# simpleStr = "Python Programming"
+# reversedStr = simpleStr[::-1]
+# print(reversedStr)
+
+#loops
+# finalReversedStr = ""
+# for value in simpleStr:
+#   finalReversedStr = value+finalReversedStr
+
+# print(finalReversedStr) 
 

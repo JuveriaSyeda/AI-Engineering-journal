@@ -9,3 +9,5 @@
 
 -- Variables, dataTypes
 -- Functions
+-- loops
+-- operators
