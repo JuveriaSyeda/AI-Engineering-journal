@@ -186,3 +186,175 @@ print("*" * 10)
 
 # print(finalReversedStr) 
 
+#Scoping
+# message = "Hello"
+
+# def greet(name):
+#     message = "Hi There"
+#     return f"{name} message"
+
+# print(greet('syeda'))
+# print(message)
+
+# def fizz_buzz(input):
+#     result = "" 
+#     #if input is divisible by 3 return fizz
+#     if input%3 == 0 and input%5 == 0:
+#         result = "FizzBuzz"
+#     # elif input is divisible by 5 return buzz
+#     elif input%5 == 0:
+#         result = "Buzz"
+#     # elif input is divisible by 3 and 5 return fizzbuzz
+#     elif input%3 ==0:
+#         result = "Fizz"
+#     # else return input value
+#     else:
+#         result = int(input)
+#     return result
+
+# print(fizz_buzz(37))
+
+#Data Structures (list,tuples,sets,dictionaries)
+# letters = ["a","b","c","d"]
+# matrix = [[0,1],[2,3]]
+# zeros = [0] * 5
+# combined = zeros+letters
+# numbers = list(range(10))
+# print(zeros,combined)
+#convert string into list/array what we call in js
+# chars = list("Hello World")
+# Array.from("Hello World") # In js or we can use split('')
+# print(numbers)
+# print(chars)
+# letters[2] = "j"
+# print(letters)
+# print(letters[:3],letters[:],letters[0:])
+# numbers = list(range(10))
+# #reverse the list
+# print(numbers[::-1])
+# #items at even indexes
+# print(numbers[::2])
+
+#unpacking list what we call destructing in js
+# numbersList = [1,2,3,4]
+# first,second,third,fourth = numbersList
+# first = numbers[0]
+# second = numbers[1]
+# third = numbers[2]
+# four = numbers[3]
+# print(second)
+# destructing in js
+# let numberArr = [1,2,3,4]
+# let [first,second,third,four] = numberArr
+
+#rest in python
+# first,second,*rest = numbersList
+# print(first,rest)
+#rest operator in js
+# let [first,second,...rest] = numberArr
+
+# first,*other,last = numbers
+# print(first,other,last)
+
+#looping over list
+
+# for letter in enumerate(letters):
+#     print(letter[0],letter[1])
+
+# for index,letter in enumerate(letters):
+#     print(index,letter)
+# we can use for loop to iterate over list and if we need index we can use enumerate function, this return enumerate object which is iterable, in each iteration it will return tuple and we can unpack tuple with the help of index
+
+#add/remove items in list
+# adds d at last
+# letters.append("d")
+#adds - at 1 position
+# letters.insert(1,"-")
+#removes last item from list
+# letters.pop()
+#removes 2 item from list
+# letters.pop(2)
+#removes first occurance of b
+#if we want to remove all occurances of b we have to loop over list
+# letters.remove("b")
+#removes items/slice from list
+# del letters[0:2]
+#remove all items in list
+# letters.clear()
+# print(letters)
+
+#Finding index of items in list
+# print(letters.count('d'))
+# if 'e' in letters:
+#     print(letters.index('e'))
+
+#sorting list
+# numbers = [3,51,2,8,6]
+# numbers.sort(reverse=True)
+# print(numbers)
+# sortedList = sorted(numbers)
+# print(sortedList,numbers)
+
+# items = [
+#     ("Product1", 85),
+#     ("Product2", 24),
+#     ("Product3", 44)
+# ]
+
+# def sortedPrice(item):
+#      return item[1]
+
+# sortedPrice(items[0])
+# items.sort(key =sortedPrice)
+
+#lambda function
+# items.sort(key= lambda item:item[1] )
+# print(items)
+
+#Map Function
+# prices = []
+# for item in items:
+#     prices.append(item[1])
+# prices = list(map(lambda item:item[1],items))
+
+# print(prices)
+
+#Filter
+# filtered = list(filter(lambda item:item[1] >= 60 ,items))
+# print(filtered)
+
+#comprehension List
+# prices = [item[1] for item in items]
+# print(prices)
+# filteredList = [item for item in items if item[1] > 40]
+# print(filteredList)
+
+#Zip function
+# list1 = (5,1,8)
+# list2 = (26,18,56)
+# zippedList = list(zip(list1,list2))
+# zippedList = list('abc',zip(list1,list2))
+
+# print(zippedList)
+#
+#stacks-LIFO-LastIn FirstOut
+# browsing_session = []
+# browsing_session.append(1)
+# browsing_session.append(2)
+# browsing_session.append(3)
+# browsing_session.pop()
+# print(browsing_session)
+# if not browsing_session:
+#     print('redirect', browsing_session[-1])
+
+#Queues- FIFO - FirstIn FirstOut
+# from collections import deque
+# queue = deque([])
+# queue.append(1)
+# queue.append(2)
+# queue.append(3)
+# print(queue)
+# queue.popleft()
+# print(queue)
+# if not queue:
+#     print('empty')

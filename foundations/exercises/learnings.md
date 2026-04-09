@@ -11,3 +11,6 @@
 -- Functions
 -- loops
 -- operators
+-- Scoping
+-- Lists and functions, iterating through lists
+tuples,stacks,queues

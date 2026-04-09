@@ -51,3 +51,27 @@ return f"{greeting}, {name}!"
 function greet(name: string, greeting: string = "Hello"): string {
 return `${greeting}, ${name}!`;
 }
+
+# Python
+
+list - []
+// Js
+Array -[]
+
+# Python-unpacking lists
+
+numbers = [1,2,3,4]
+first,last,second,third = numbers
+
+// JS - destructing
+let numbersArr = [1,2,3,4,5]
+let [first,second,third,fourth,fifth] = numbersArr
+
+# Python - rest operator
+
+It is denoted by *
+first,*last = numbers
+
+// JS
+It is denoted by ...
+let [first,...last] = numbersArr
