@@ -12,5 +12,7 @@
 -- loops
 -- operators
 -- Scoping
--- Lists and functions, iterating through lists
-tuples,stacks,queues
+-- Lists,tuples,array,sets,dictionaries
+--list comprehesions,stacks,queues
+--Exceptions
+--classes

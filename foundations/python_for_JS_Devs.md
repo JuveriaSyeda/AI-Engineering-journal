@@ -75,3 +75,10 @@ first,*last = numbers
 // JS
 It is denoted by ...
 let [first,...last] = numbersArr
+
+# Python - spread operator
+
+It is denoted by \*
+
+// JS
+it is denoted by ...
