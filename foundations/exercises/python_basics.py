@@ -576,28 +576,79 @@
 #class- is the blueprint for creating new objects
 #object- instance of class
 
-class Person:
-  isLicensed = True
+# class Person:
+  # isLicensed = True
 
-  def __init__(self,firstName,lastName):
-    self.firstName = firstName
-    self.lastName = lastName
-  
-  def draw(self):
-    print('age:',self.age)
+  # def __init__(self,firstName,lastName):
+  #   self.firstName = firstName
+  #   self.lastName = lastName
+
+  # def draw(self):
+  #   print('age:',self.age)
     
-Person.isLicensed = False
-person = Person(4,6)
-person.age = 22
-person.draw()
-print(Person.isLicensed)
-print(person.isLicensed)
+# Person.isLicensed = False
+# person = Person(4,6)
+# person.age = 22
+# person.draw()
+# print(Person.isLicensed)
+# print(person.isLicensed)
 
 
-person2 = Person(1,3)
-person2.age = 33
-person2.draw()
-print(person2.isLicensed)
+# person2 = Person(1,3)
+# person2.age = 33
+# person2.draw()
+# print(person2.isLicensed)
 
 # print(isinstance(person,Person))
 
+# class Point():
+#   def __init__(self,x,y):
+#     self.x = x
+#     self.y = y
+  
+#   @classmethod
+#   def zero(cls):
+#     return cls(1,0)
+
+#   def draw(self):
+#     print(self.x,self.y)
+
+# point = Point.zero()
+# print(point)
+# point.draw()
+
+# class Point():
+#   def __init__(self,x,y):
+#     self.x = x
+#     self.y = y
+
+#   def __str__(self):
+#       return f"({self.x},{self.y})"
+
+#   def draw(self):
+#     print(self.x,self.y)
+
+# point = Point(1,2)
+# print(point)
+
+# class Point:
+#   def __init__(self,x,y):
+#         self.x = x
+#         self.y = y
+  
+#   def __eq__(self,other):
+#     return self.x == other.x and self.y == other.y
+  
+#   def __gt__(self,other):
+#     return self.x > other.y and self.y > other.y
+
+#   def __add__(self,other):
+#     return Point(self.x+other.x,self.y+other.y)
+
+# point = Point(8,4)
+# point2 = Point(1,2)
+# # print(point == point2)
+# # print(point < point2)
+# total = point + point2
+
+# print(total.x,total.y)
