@@ -4,6 +4,8 @@
 # from sys import getsizeof
 # import sys
 # from timeit import timeit
+# from abc import ABC,abstractmethod
+# from collections import namedtuple
 
 # print("Hello World")
 # print("*" * 10)
@@ -652,3 +654,217 @@
 # total = point + point2
 
 # print(total.x,total.y)
+
+# class TagCloud:
+#   def __init__(self):
+#     self.__tags = {}
+
+#   def add(self,tag):
+#     self.__tags[tag.lower()] = self.__tags.get(tag.lower(),0) +1
+
+#   def __getitem__(self,tag):
+#     return self.__tags.get(tag.lower(),0)
+
+#   def __setitem__(self,tag,val):
+#      self.__tags[tag.lower()] = val
+  
+#   def __len__(self):
+#     return len(self.__tags)
+
+#   def __iter__(self):
+#     return iter(self.__tags)
+
+# tagcloud = TagCloud()
+# tagcloud.add('Hello')
+# tagcloud.add('HelLo')
+# tagcloud.add('heLlO')
+# tagcloud['hello'] = 8
+# print(len(tagcloud))
+# print(tagcloud['hello'])
+# print(tagcloud.__dict__)
+# print(tagcloud._TagCloud__tags)
+
+#Properties
+# class Product:
+#   def __init__(self,price):
+#     self.setPrice(price)
+
+
+#   def getPrice(self):
+#     return self.__price
+
+#   def setPrice(self,value):
+#     if value < 0:
+#       raise ValueError("Price cannot be negative")
+#     self.__price = value
+  
+#   price = property(getPrice,setPrice)
+
+# product = Product(55)
+# product.price = 14
+# print(product.price)
+
+# class Product:
+
+#   def __init__(self,price):
+#     self.price = price
+
+#   @property
+#   def price(self):
+#       return self.__price
+
+#   @price.setter
+#   def price(self,value):
+#     if value < 0:
+#       raise ValueError("Price cannot be negative")
+#     self.__price = value
+
+# product = Product(22)
+# product.price = -10
+# print(product)
+
+#Inheritance
+# Inheritance- A mechanism that allows us to define the common behaviour or common functions in one class and inherit them in another classes
+
+# class Animal:
+
+#   def __init__(self):
+#     self.age = 1
+#     print("Animal is the parent and base class")
+
+#   def eat(self):
+#     print("eat")
+
+# #Animal is base and parent class
+# #Mammal is sub and child class
+
+# class Mammal(Animal):
+
+#   def __init__(self):
+#     print("Mammal is the child and subbase class")
+#     self.weight = 20
+#     super().__init__()
+
+#   def walk(self):
+#     print("walk")
+
+# class Fish(Animal):
+
+#   def walk(self):
+#     print("swim")
+
+# m = Mammal()
+# m.eat()
+# print(m.age)
+# print(isinstance(m,Mammal),isinstance(m,Animal))
+# o = object()
+# print(issubclass(Mammal,Animal))
+# print(issubclass(Mammal,object))
+# print(m.weight)
+
+# Multiple Inheritance
+
+# class Employee:
+#   def greet(self):
+#     print("Employee greet")
+
+# class Person:
+#   def greet(self):
+#     print("Person greet")
+
+# class Manager(Person,Employee):
+#   pass
+
+# m = Manager()
+# m.greet()
+
+# class InvalidOperationError(Exception):
+#   pass
+
+# class Stream(ABC):
+#   def __init__(self):
+#     self.opened = False
+  
+#   def open(self):
+#     if self.opened:
+#       raise InvalidOperationError("Stream is already opened")
+#     self.opened = True
+
+#   def close(self):
+#     if not self.opened:
+#       raise InvalidOperationError("Stream is already closed")
+#     self.opened = False
+  
+#   @abstractmethod
+#   def read(self):
+#     pass
+
+# class FileStream(Stream):
+#   def read(self):
+#     print("Reading data from a file")
+
+# class NetworkStream(Stream):
+#   def read(self):
+#     print("Reading data from a network")
+
+# class MemoryStream(Stream):
+#    def read(self):
+#      print("Reading data from memory Stream")
+
+# stream = MemoryStream()
+# stream.open()
+
+# Polymorphism- many forms
+#Duck Typing 
+#python is a dynamically typed language
+#It Doesn't check the type of objects and it only looks for the existence of certain methods in object
+
+
+# class UIControl(ABC):
+#   @classmethod
+#   def draw(self):
+#     pass
+
+# class TextBook():
+#   def draw(self):
+#     print("Textbook")
+
+# class DropdownList():
+#   def draw(self):
+#     print("Dropdown list")
+
+# def draw(controls):
+#   for control in controls:
+#     control.draw()
+
+# ddl = DropdownList()
+# print(isinstance(ddl,UIControl))
+# draw(ddl)
+# txt = TextBook()
+# draw([ddl,txt])
+
+# class Text(str):
+#   def duplicate(self):
+#     return self + self
+
+# text = Text("Python")
+# print(text.duplicate())
+
+# class TrackableList(list):
+#   def append(self,object):
+#     print("Append Called")
+#     super().append(object)
+
+# list = TrackableList()
+# # list.append("1")
+
+# Point = namedtuple("Point",["x","y"])
+# p1 = Point(x=1,y=2)
+# p2 = Point(1,2)
+# print(p1 == p2)
+
+def testing():
+  pass
+
+def testingMod():
+  pass

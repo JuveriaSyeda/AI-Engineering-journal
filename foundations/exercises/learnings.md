@@ -16,3 +16,6 @@
 --list comprehesions,stacks,queues
 --Exceptions
 --classes
+-- oops
+-- Modules
+-- Packages
