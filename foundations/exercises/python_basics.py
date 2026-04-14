@@ -6,6 +6,12 @@
 # from timeit import timeit
 # from abc import ABC,abstractmethod
 # from collections import namedtuple
+# from collections import deque
+# from package_exercise.python_modules import testing
+# from package_exercise.pack_exer1 import practising_pack
+from pathlib import Path
+
+
 
 # print("Hello World")
 # print("*" * 10)
@@ -355,7 +361,7 @@
 #     print('redirect', browsing_session[-1])
 
 #Queues- FIFO - FirstIn FirstOut
-# from collections import deque
+
 # queue = deque([])
 # queue.append(1)
 # queue.append(2)
@@ -863,8 +869,26 @@
 # p2 = Point(1,2)
 # print(p1 == p2)
 
-def testing():
-  pass
+# def testing():
+#   pass
 
-def testingMod():
-  pass
+# def testingMod():
+#   pass
+
+# practising_pack.packPrac()
+
+# path = Path("python_basics.py")
+
+# Path() / "package_exercise" / "__init__.py"
+
+# Path.home()
+
+# path.exists()
+# path.is_file()
+# path.is_dir()
+# print(path.name,path.parent)
+# path = path.with_name("file.txt")
+# print(path.absolute())
+# path.mkdir()
+# path.rmdir()
+# path.rename("python_basics")
