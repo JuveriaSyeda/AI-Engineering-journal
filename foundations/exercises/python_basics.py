@@ -877,13 +877,13 @@ from pathlib import Path
 
 # practising_pack.packPrac()
 
-# path = Path("python_basics.py")
+# path = Path("/Users/syedzuberiashabnam/Desktop/AI-Engineering-journal/foundations/exercises")
 
 # Path() / "package_exercise" / "__init__.py"
 
 # Path.home()
 
-# path.exists()
+# print(path.exists())
 # path.is_file()
 # path.is_dir()
 # print(path.name,path.parent)
@@ -892,3 +892,21 @@ from pathlib import Path
 # path.mkdir()
 # path.rmdir()
 # path.rename("python_basics")
+# print(path.is_dir())
+# for p in path.iterdir():
+#   print(p)
+
+# comprehension
+# pathdir = [p for p in path.iterdir() if p.is_dir()]
+# print(pathdir)
+
+# py_files = [p for p in path.rglob("*.py")]
+
+# py_files = [p for p in path.glob("**/*.py")]
+# print(py_files)
+
+
+path = Path("/Users/syedzuberiashabnam/Desktop/AI-Engineering-journal/foundations/exercises/learnings.md")
+
+# print(path.exists())
+print(path.stat())
