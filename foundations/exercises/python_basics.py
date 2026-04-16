@@ -9,8 +9,6 @@
 # from collections import deque
 # from package_exercise.python_modules import testing
 # from package_exercise.pack_exer1 import practising_pack
-from pathlib import Path
-
 
 
 # print("Hello World")
@@ -876,37 +874,3 @@ from pathlib import Path
 #   pass
 
 # practising_pack.packPrac()
-
-# path = Path("/Users/syedzuberiashabnam/Desktop/AI-Engineering-journal/foundations/exercises")
-
-# Path() / "package_exercise" / "__init__.py"
-
-# Path.home()
-
-# print(path.exists())
-# path.is_file()
-# path.is_dir()
-# print(path.name,path.parent)
-# path = path.with_name("file.txt")
-# print(path.absolute())
-# path.mkdir()
-# path.rmdir()
-# path.rename("python_basics")
-# print(path.is_dir())
-# for p in path.iterdir():
-#   print(p)
-
-# comprehension
-# pathdir = [p for p in path.iterdir() if p.is_dir()]
-# print(pathdir)
-
-# py_files = [p for p in path.rglob("*.py")]
-
-# py_files = [p for p in path.glob("**/*.py")]
-# print(py_files)
-
-
-path = Path("/Users/syedzuberiashabnam/Desktop/AI-Engineering-journal/foundations/exercises/learnings.md")
-
-# print(path.exists())
-print(path.stat())
