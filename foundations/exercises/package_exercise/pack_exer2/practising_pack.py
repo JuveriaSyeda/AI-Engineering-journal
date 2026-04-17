@@ -1,2 +1,2 @@
-def practExer():
-    pass
+# def practExer():
+#     pass
