@@ -1,14 +1,25 @@
 # from python_basics import testing,testingMod
 # import python_basics
 # import sys
-import sqlite3
-from pathlib import Path
+# import sqlite3
+# from pathlib import Path
 # from time import ctime
 # import shutil
 # from zipfile import ZipFile
- 
 # import csv
-import json
+# import json
+# from datetime import datetime,timedelta
+# import random
+# import string
+# import webbrowser
+# from email.mime.multipart import MIMEMultipart
+# from email.mime.text import MIMEText
+# import smtplib
+# import requests
+
+
+
+
 
 
 # python_basics.testingMod()
@@ -26,7 +37,7 @@ import json
 # if(__name__ == '__main__'):
 #   print("Practising Python")
 
-# path = Path("/Users/syedzuberiashabnam/Desktop/AI-Engineering-journal/foundations/exercises")
+# path = Path("AI-Engineering-journal/foundations/exercises")
 
 # Path() / "package_exercise" / "__init__.py"
 
@@ -55,7 +66,7 @@ import json
 # print(py_files)
 
 
-# source = Path("/Users/syedzuberiashabnam/Desktop/AI-Engineering-journal/foundations/exercises/package_exercise/__init__.py")
+# source = Path("AI-Engineering-journal/foundations/exercises/package_exercise/__init__.py")
 
 # print(path.exists())
 # print(ctime(path.stat().st_ctime))
@@ -70,12 +81,12 @@ import json
 # Zip Files
 
 # with ZipFile("packexercise.zip",'w') as zip:
-#   for path in Path("/Users/syedzuberiashabnam/Desktop/AI-Engineering-journal/foundations/exercises").rglob("*.*"):
+#   for path in Path("AI-Engineering-journal/foundations/exercises").rglob("*.*"):
 #     zip.write(path)
 
-# with ZipFile("/Users/syedzuberiashabnam/Desktop/AI-Engineering-journal/foundations/exercises/package_exercise/packexercise.zip") as zip:
+# with ZipFile("AI-Engineering-journal/foundations/exercises/package_exercise/packexercise.zip") as zip:
 #   # print(zip.namelist())
-#   info = zip.getinfo("Users/syedzuberiashabnam/Desktop/AI-Engineering-journal/foundations/exercises/python_basics.py")
+#   info = zip.getinfo("AI-Engineering-journal/foundations/exercises/python_basics.py")
 #   print(info.compress_size)
 #   zip.extractall("extract")
 
@@ -156,9 +167,63 @@ import json
 # print(dt.strftime("%Y"))
 # print(dt2 > dt1)
 
+# now = datetime.now()
+# future = now + timedelta(days=1)
+
+# print(future.minute)
+# delta = timedelta(days=3,hours=4)
+# print(delta) 
+
+# print(random.random())
+# print(random.randint(1,20))
+# print(random.randrange(0,20,3))
+# print(random.choice([2,5,7,9]) )
+# print(random.choices([2,3,4,5,6],k=2))
+
+#Generating a random password-password generator
+# print("".join(random.choices(string.ascii_letters+string.digits,k=6)))
+
+# webbrowser.open("https://google.com")
+# print("ChatGPt !!")
+
+# message = MIMEMultipart()
+# message["from"] = "Syeda"
+# message["to"] = "test@gmail.com"
+# message["subject"] = "Testing with Python"
+# message.attach(MIMEText("Body"))
+
+# with smtplib.SMTP(host="smtp.gmail.com", port=588) as smtp:
+#   smtp.ehlo()
+#   smtp.starttls()
+#   smtp.login("Hello There")
+#   smtp.send_message(message)
+#   print("message sent")
+
+
+# response =  requests.get("http://google.com")
+
+# """ This is the hello world module"""
+# def helloWorld():
+#   """ This Module prints hello World """
+#   print("Hello World")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #sqlite
 #readJson
-# jsonProducts = json.loads(Path("/Users/syedzuberiashabnam/Desktop/AI-Engineering-journal/foundations/exercises/package_exercise/products.json").read_text())
+# jsonProducts = json.loads(Path("AI-Engineering-journal/foundations/exercises/package_exercise/products.json").read_text())
 # print(jsonProducts)
 
 #storing in database
