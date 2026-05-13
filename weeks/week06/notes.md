@@ -89,12 +89,12 @@ Using models through APIs in applications.
 
 Example Flow:
 
-client.chat.completions.create(
-model="gpt-4.1",
-messages=[
-{"role": "user", "content": "Hello"}
-]
-)
+    client.chat.completions.create(
+    model="gpt-4.1",
+    messages=[
+    {"role": "user", "content": "Hello"}
+    ]
+    )
 
 3. Local Inference
    Running models directly on a local machine.
@@ -114,3 +114,95 @@ messages=[
 
 - Requires good hardware
 - Large models consume more memory
+
+## LLM Types
+
+1.  Base Model
+
+    Better for fine-tunning and learning a new skill
+
+2.  Chat/Instruct Model
+
+    Better for chat/ conversations
+
+3.  Reasoning/Thinking Model
+
+    Better for problem solving
+
+## Frontier Models- Strengths and Pitfall
+
+### Performance
+
+1. Syntesizing information
+
+Answering a question in depth with a structured, well researched answer and often including a summary
+
+#### Capabilities include:
+
+- Answering questions in depth
+- Generating well-structured explanations
+- Providing summaries alongside detailed responses
+- Organizing complex topics clearly
+
+2. Fleshing out a skeleton
+
+From a couple of notes,building out a well crafted email, or a blog post, and iterating on it with you until perfect
+
+3. Coding
+
+The ability to write and debug code is remarkable
+
+#### Capabilities include:
+
+- Writing code across multiple languages
+- Debugging and explaining errors
+- Generating boilerplate and reusable code
+- Assisting with problem solving and implementation
+
+### Limitations
+
+1. Specialized domains
+
+Most are not phd's, not even close to
+
+#### Limitations include:
+
+- Limited deep expertise in niche domains
+- Can produce shallow or partially correct explanations
+- May miss domain-specific nuances
+
+2. Recent events
+
+Limited knowledge beyond training cut-off date; code often uses legacy APIs/models
+
+#### Common issues:
+
+- Lack of awareness of recent developments
+- Use of outdated APIs, libraries, or tools
+- Suggestions based on deprecated practices
+- Can Confidently make mistakes
+
+Some curious blindspots
+Can jump to conclusions when coding
+
+#### Observed behaviors:
+
+- Hallucinating facts or references
+- Jumping to conclusions while coding
+- Missing obvious edge cases
+- Producing convincing but incorrect outputs
+
+### Experimented with Chat-Based AI Products
+
+Tested multiple AI chat products through Web UIs to better understand:
+
+- Response quality
+- Reasoning capabilities
+- Strengths and weaknesses
+- Differences in coding assistance
+
+### Introduction to agentic AI
+
+Learned and experimented with Agentic AI concepts:
+
+- Autonomous task execution
